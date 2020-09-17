@@ -1,0 +1,25 @@
+package ENTIDADES;
+
+import APLICACAO.Pessoa;
+
+public class ADMINISTRADOR extends Pessoa {
+
+	private String ajudaDeCusto;
+	
+	public ADMINISTRADOR (String nome, String endereco, String ajudaDeCusto)
+	{
+		super(nome, endereco);
+		this.ajudaDeCusto = ajudaDeCusto;
+	}
+
+	public String getAjudaDeCusto() {
+		return ajudaDeCusto;
+	}
+
+	public void setAjudaDeCusto(String ajudaDeCusto) {
+		this.ajudaDeCusto = ajudaDeCusto;
+	}
+	
+	
+	
+}

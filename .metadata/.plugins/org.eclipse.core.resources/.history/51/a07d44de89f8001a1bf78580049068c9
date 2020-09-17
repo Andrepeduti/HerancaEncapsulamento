@@ -1,0 +1,22 @@
+package APLICACAO;
+
+import ENTIDADES.ADMINISTRADOR;
+import ENTIDADES.FORNECEDOR;
+
+public class CADASTRO {
+
+	public static void main(String[] args) {
+		
+		Pessoa integrantePessoa= new Pessoa("André", "Rua Luiz", (955284153));
+		FORNECEDOR fornecedor = new FORNECEDOR("Stella", "Rua Simões", (70707070), 500, 800, 50); //(String nome, String endereco, long telefone, int valorCredito, int valorDivida, obter saldo) 
+		ADMINISTRADOR adm = new ADMINISTRADOR ("Diva", "Rua 150", 1000); // (String nome, String endereco, String ajudaDeCusto)
+
+		System.out.println("Seguem os dados de nossa integrante do grupo: ");
+		System.out.println("Nome: " + integrantePessoa.getNome());
+		System.out.println("Endereço: " + integrantePessoa.getEndereco());
+		System.out.println("Telefone: " + integrantePessoa.getTelefone());
+	
+	
+	}
+
+}

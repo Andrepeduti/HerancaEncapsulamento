@@ -1,0 +1,39 @@
+package APLICACAO;
+
+import ENTIDADES.ADMINISTRADOR;
+import ENTIDADES.FORNECEDOR;
+
+public class CADASTRO {
+
+	public static void main(String[] args) {
+		
+		Pessoa integrantePessoa= new Pessoa("André", "Rua Luiz", (955284153));
+		FORNECEDOR fornecedor = new FORNECEDOR("Stella", "Rua Simões", (70707070), 800, 300, 100); //(String nome, String endereco, long telefone, int valorCredito, int valorDivida, obter saldo) 
+		ADMINISTRADOR adm = new ADMINISTRADOR ("Diva", "Rua 150",(80808080), 1000); // (String nome, String endereco, String ajudaDeCusto)
+
+		System.out.println("Seguem os dados de nossa integrante do grupo: ");
+		System.out.println("Nome: " + integrantePessoa.getNome());
+		System.out.println("Endereço: " + integrantePessoa.getEndereco());
+		System.out.println("Telefone: " + integrantePessoa.getTelefone());
+		
+		System.out.println("");
+		
+		System.out.println("Segue os dados do Fornecedor");
+		System.out.println("Nome: " + fornecedor.getNome());
+		System.out.println("Endereço: "+fornecedor.getEndereco());
+		System.out.println("Telefone: " + fornecedor.getTelefone());
+		System.out.println("Saldo positivo: "); fornecedor.MostraSaldo();
+		
+		
+		System.out.println("");
+		
+		System.out.println("Segue os dados do Administrador");
+		System.out.println("Nome: " + adm.getNome());
+		System.out.println("Endereço: "+ adm.getEndereco());
+		System.out.println("Telefone para contato: " + adm.getTelefone());
+		System.out.println("Valor de ajuda de custo restante: "+ adm.getAjudaDeCusto());
+	
+	
+	}
+
+}

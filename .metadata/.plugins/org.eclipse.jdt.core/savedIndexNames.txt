@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Vitor\Desktop\HERANCA-ENCAPSULAMENTO\.metadata\.plugins\org.eclipse.jdt.core
+2196199803.index
+3483746504.index
